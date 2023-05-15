@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zoo Blast</title>
+    <link rel="icon" type="image/x-icon" href="resources/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="engine.js"></script>
+</head>
+
+<body>
+    <img id="speaker" src="resources/speaker-muted.svg" alt="speaker-muted" onclick="playBackgroundMusic()">
+
+    <div id="in-game" style="display: none">
+        <div id="time-bar">
+            <div id="time"></div>
+            <h1 id="score">Score: </h1>
+        </div>
+
+        <div id="playground" class="shake"></div>
+    </div>
+
+    <div id="out-game">
+        <input type="text" id="username" placeholder="Username">
+        <br>
+        <button id="start-button" onclick="initializeGame()">Start</button>
+        <br>
+        <table id="scoreboard">
+            <tr>
+                <th>Place</th>
+                <th>Username</th>
+                <th>Score</th>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
